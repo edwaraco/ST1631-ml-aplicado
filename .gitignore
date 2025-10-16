@@ -1,0 +1,170 @@
+# Proyecto ML: Sistema de Recomendación de Cultivos
+# Archivos a ignorar en Git
+
+# ==================================================
+# PYTHON
+# ==================================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+python3.12/
+python312/
+
+# ==================================================
+# DATOS
+# ==================================================
+# sklearn data
+sklearn_data/
+
+# Ignorar datos crudos grandes (comentar si se desea versionar)
+datos/crudos/*.csv
+datos/crudos/*.xlsx
+datos/crudos/*.json
+
+# Ignorar datos procesados (se pueden regenerar)
+datos/procesados/*.csv
+datos/procesados/*.pkl
+
+# Ignorar datos externos
+datos/externos/*
+
+# Excepción: mantener README en carpetas de datos
+!datos/crudos/README.md
+!datos/procesados/README.md
+!datos/externos/README.md
+
+# ==================================================
+# MODELOS
+# ==================================================
+# Modelos grandes (usar Git LFS si es necesario)
+modelos/*.h5
+modelos/*.hdf5
+modelos/*.pkl
+modelos/*.joblib
+modelos/*.pt
+modelos/*.pth
+
+# Excepción: mantener .gitkeep
+!modelos/.gitkeep
+
+# ==================================================
+# REPORTES Y FIGURAS
+# ==================================================
+# PDFs generados (versionar solo finales)
+reportes/*.pdf
+reportes/figuras/*.png
+reportes/figuras/*.jpg
+reportes/figuras/*.jpeg
+reportes/figuras/*.svg
+
+# Excepción: reportes finales de entregas
+!reportes/reporte_entrega1.pdf
+!reportes/reporte_entrega2.pdf
+!reportes/reporte_final.pdf
+
+# ==================================================
+# IDEs Y EDITORES
+# ==================================================
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Jupyter
+.jupyter/
+
+# ==================================================
+# SISTEMA OPERATIVO
+# ==================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ==================================================
+# LOGS Y TEMPORALES
+# ==================================================
+*.log
+*.tmp
+*.temp
+logs/
+temp/
+
+# ==================================================
+# CREDENCIALES Y CONFIGURACIÓN
+# ==================================================
+.env
+.env.local
+.env.*.local
+config/secrets.yaml
+*.key
+*.pem
+
+# ==================================================
+# OTROS
+# ==================================================
+# Archivos de backup
+*.bak
+*.backup
+*.swp
+*.swo
+
+# Archivos comprimidos
+*.zip
+*.tar.gz
+*.rar
+
+# Excepción: mantener entregas finales
+!entregas/*.zip
+
+# Solucion de conflictos
+*.orig
+*.*~

@@ -1,0 +1,53 @@
+# Proyecto ML: Sistema de Recomendación de Cultivos
+# Requisitos de Python para el proyecto
+
+# ==================================================
+# INSTALACIÓN
+# ==================================================
+# Para instalar todos los requisitos:
+# pip install -r requirements.txt
+#
+# Para crear el entorno virtual:
+# python -m venv venv
+# source venv/bin/activate  # En Windows: venv\Scripts\activate
+# pip install -r requirements.txt
+
+
+# ==================================================
+# ANÁLISIS Y MANIPULACIÓN DE DATOS
+# ==================================================
+pandas>=2.0.0
+numpy>=1.24.0
+
+# ==================================================
+# VISUALIZACIÓN
+# ==================================================
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# ==================================================
+# MACHINE LEARNING
+# ==================================================
+scikit-learn>=1.3.0
+
+# ==================================================
+# ANÁLISIS ESTADÍSTICO
+# ==================================================
+scipy>=1.10.0
+
+# ==================================================
+# JUPYTER NOTEBOOK
+# ==================================================
+jupyter>=1.0.0
+ipykernel>=6.22.0
+ipython>=8.12.0
+
+# ==================================================
+# DATA ACQUISITION
+# ==================================================
+kagglehub>=0.2.0
+
+# ==================================================
+# UTILIDADES
+# ==================================================
+packaging>=23.0
